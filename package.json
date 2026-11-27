@@ -1,0 +1,18 @@
+{
+  "name": "defense-line-national-security-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A student-built interactive learning experience on China's holistic approach to national security.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "capture": "node scripts/capture.mjs",
+    "verify:live": "node scripts/verify-live.mjs",
+    "check": "node --check assets/js/app.js && node --check scripts/capture.mjs && node --check scripts/verify-live.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

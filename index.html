@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ede1">
+  <meta name="description" content="防线：一本可以参与的国家安全校园读本。">
+  <meta property="og:title" content="防线｜国家安全校园读本">
+  <meta property="og:description" content="在三个校园情境中，理解安全边界，练习风险识别。">
+  <meta property="og:type" content="website">
+  <title>防线｜国家安全校园读本</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/editorial.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="progress-track" aria-hidden="true"><span id="page-progress"></span></div>
+  <div class="ambient-cursor" id="ambient-cursor" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="防线首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44" role="img">
+          <path d="M22 3.5 38 10v11.3c0 9.4-6.5 16.5-16 19.2-9.5-2.7-16-9.8-16-19.2V10L22 3.5Z"/>
+          <path d="M13.5 24.2 19 18l4.4 4.7 8-9.2"/>
+        </svg>
+      </span>
+      <span class="brand-copy"><strong>防线</strong><small>校园读本</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#concept">观念</a>
+      <a href="#domains">图鉴</a>
+      <a href="#simulation">推演</a>
+      <a href="#timeline">依据</a>
+      <a href="#actions">行动</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span><span class="sr-only">打开导航</span>
+    </button>
+    <div class="header-status"><i></i><span>国家安全教育 · 2026</span></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="移动端导航">
+      <a href="#concept"><span>01</span>观念</a>
+      <a href="#domains"><span>02</span>图鉴</a>
+      <a href="#simulation"><span>03</span>推演</a>
+      <a href="#timeline"><span>04</span>依据</a>
+      <a href="#actions"><span>05</span>行动</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="network-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="orbit-core">
+          <svg viewBox="0 0 160 160">
+            <defs>
+              <linearGradient id="shieldGradient" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#7af4df"/>
+                <stop offset=".7" stop-color="#53b8ff"/>
+                <stop offset="1" stop-color="#ffca7a"/>
+              </linearGradient>
+            </defs>
+            <path class="orbit-shield" d="M80 13 137 35v43c0 34-23.5 60-57 71-33.5-11-57-37-57-71V35L80 13Z"/>
+            <path class="orbit-signal" d="M47 88 67 68l17 17 31-37"/>
+            <circle cx="47" cy="88" r="4"/><circle cx="67" cy="68" r="4"/>
+            <circle cx="84" cy="85" r="4"/><circle cx="115" cy="48" r="4"/>
+          </svg>
+        </div>
+        <span class="orbit-node node-one">网络</span>
+        <span class="orbit-node node-two">数据</span>
+        <span class="orbit-node node-three">科技</span>
+        <span class="orbit-node node-four">文化</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal"><span>北京航空航天大学 · 国家安全教育</span><b>2026</b></p>
+        <h1 id="hero-title" class="reveal">
+          <span>防线，</span>
+          <em>在每一次选择中</em>
+          <span>生成。</span>
+        </h1>
+        <p class="hero-lead reveal">一本可以参与的国家安全校园读本。从一条可疑消息、一张校园照片、一次数据授权开始，练习识别风险，也练习做出更稳妥的选择。</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#simulation">
+            <span>开始情境练习</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+          </a>
+          <a class="button button-ghost" href="#domains">
+            <span class="button-index">01</span>
+            <span>翻开风险图鉴</span>
+          </a>
+        </div>
+        <div class="hero-metrics reveal" aria-label="作品数据">
+          <div><strong data-count="20">20</strong><span>安全领域</span></div>
+          <div><strong data-count="3">3</strong><span>情境推演</span></div>
+          <div><strong data-count="8">8</strong><span>自测项目</span></div>
+          <div><strong data-count="1">1</strong><span>行动起点</span></div>
+        </div>
+      </div>
+
+      <div class="hero-side-note" aria-hidden="true">
+        <span>向下阅读</span>
+        <i></i>
+      </div>
+      <a class="scroll-cue" href="#concept"><span>继续阅读</span><svg viewBox="0 0 22 30"><path d="M11 1v25M3 19l8 8 8-8"/></svg></a>
+      <div class="hero-coordinate" aria-hidden="true">阅读时间<br>约 18 分钟</div>
+    </section>
+
+    <section class="concept section-shell" id="concept" aria-labelledby="concept-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>01</span> 为什么要谈</p>
+          <h2 id="concept-title">安全，不只在远方。</h2>
+        </div>
+        <p>它从实验室的一台电脑、群聊里的一段录音、一份资料收集任务开始，也落在每个人对信息边界的判断里。</p>
+      </div>
+
+      <div class="manifesto-grid">
+        <article class="manifesto-main reveal">
+          <p class="card-label">核心观点</p>
+          <blockquote>“国泰民安是人民群众最基本、最普遍的愿望。”</blockquote>
+          <p>总体国家安全观强调以人民安全为宗旨、以政治安全为根本、以经济安全为基础，统筹发展和安全。它不是遥远机构的专属命题，而是一套可以转化为判断与行动的方法。</p>
+          <div class="manifesto-seal" aria-hidden="true">
+            <span>停</span><span>看</span><span>问</span><span>报</span>
+          </div>
+        </article>
+        <article class="principle-card reveal">
+          <span class="principle-number">01</span>
+          <div class="principle-icon">
+            <svg viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="17" r="7"/><path d="M14 44c0-10 5-17 13-17s13 7 13 17"/></svg>
+          </div>
+          <h3>看见“人”</h3>
+          <p>安全的落点是人的权利、尊严和发展；任何行动最终都应回到“对人是否有利”。</p>
+        </article>
+        <article class="principle-card reveal">
+          <span class="principle-number">02</span>
+          <div class="principle-icon">
+            <svg viewBox="0 0 54 54" aria-hidden="true"><path d="M8 38 27 9l19 29"/><path d="M15 38h24"/><path d="M21 27h12"/></svg>
+          </div>
+          <h3>看见“系统”</h3>
+          <p>一个风险很少单独出现，数据泄露可能牵动网络、科技与产业链，需要跨域思考。</p>
+        </article>
+        <article class="principle-card reveal">
+          <span class="principle-number">03</span>
+          <div class="principle-icon">
+            <svg viewBox="0 0 54 54" aria-hidden="true"><path d="M27 6v42M6 27h42M12 12l30 30M42 12 12 42"/><circle cx="27" cy="27" r="8"/></svg>
+          </div>
+          <h3>看见“边界”</h3>
+          <p>好奇不等于越界。面对敏感设施、内部资料和异常接触，先确认边界再行动。</p>
+        </article>
+      </div>
+
+      <div class="definition-band reveal">
+        <div class="definition-label">一个学生视角的定义</div>
+        <p>对国家安全的正确认识，不是把一切问题都无限放大，而是在事实、法律与责任之间，形成有分寸的判断。</p>
+        <span class="definition-index">001 / 006</span>
+      </div>
+    </section>
+
+    <section class="domains section-shell" id="domains" aria-labelledby="domains-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>02</span> 安全图鉴</p>
+          <h2 id="domains-title">二十个坐标，<br>拼成同一张安全地图。</h2>
+        </div>
+        <p>选择一个领域，查看它与大学生活的连接。<span class="inline-hint">点击卡片展开</span></p>
+      </div>
+
+      <div class="domain-toolbar reveal">
+        <div class="filter-group" role="group" aria-label="领域筛选">
+          <button class="filter-chip is-active" data-filter="all" type="button">全部 <span>20</span></button>
+          <button class="filter-chip" data-filter="digital" type="button">数字空间</button>
+          <button class="filter-chip" data-filter="society" type="button">社会民生</button>
+          <button class="filter-chip" data-filter="frontier" type="button">新型领域</button>
+        </div>
+        <p class="toolbar-note">不是距离，而是连接</p>
+      </div>
+
+      <div class="domain-layout">
+        <div class="domain-orbit-card reveal" aria-hidden="true">
+          <canvas id="radar-canvas"></canvas>
+          <div class="radar-copy">
+            <span>从校园出发</span>
+            <strong>个体选择<br>连接系统安全</strong>
+          </div>
+          <span class="radar-status"><i></i>校园安全观察</span>
+          <span class="radar-coordinate">20 个领域 / 一张关系图</span>
+        </div>
+        <div class="domain-grid" id="domain-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="simulation section-shell" id="simulation" aria-labelledby="simulation-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>03</span> 情境练习</p>
+          <h2 id="simulation-title">消息正在抵达。<br>你会如何回应？</h2>
+        </div>
+        <p>三个校园情境，练习识别、核验与处置。</p>
+      </div>
+
+      <div class="simulation-shell reveal">
+        <div class="simulation-sidebar">
+          <p class="panel-label">选择一个情境</p>
+          <div class="scenario-tabs" role="tablist" aria-label="情境选择">
+            <button class="scenario-tab is-active" data-scenario="intern" role="tab" aria-selected="true" type="button">
+              <span class="tab-number">01</span>
+              <span><strong>远程实习</strong><small>异常接触</small></span>
+              <i></i>
+            </button>
+            <button class="scenario-tab" data-scenario="voice" role="tab" aria-selected="false" type="button">
+              <span class="tab-number">02</span>
+              <span><strong>突发录音</strong><small>信息辨识</small></span>
+              <i></i>
+            </button>
+            <button class="scenario-tab" data-scenario="map" role="tab" aria-selected="false" type="button">
+              <span class="tab-number">03</span>
+              <span><strong>开放地图</strong><small>数据边界</small></span>
+              <i></i>
+            </button>
+          </div>
+          <div class="simulation-instructions">
+            <span>玩法</span>
+            <p>阅读对话，做出选择。每次判断都会改变你的防护值，并给出即时反馈。</p>
+          </div>
+          <div class="simulation-signal" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="scenario-stage">
+          <header class="scenario-header">
+            <div>
+              <p id="scenario-code">情境一 · 异常接触</p>
+              <h3 id="scenario-title">一份报酬丰厚的“远程调研”</h3>
+            </div>
+            <div class="scenario-status"><span>进行中</span><i></i></div>
+          </header>
+          <div class="scenario-chat" id="scenario-chat" role="log" aria-live="polite" aria-label="情境对话"></div>
+          <div class="scenario-choices" id="scenario-choices"></div>
+          <footer class="scenario-footer">
+            <div class="safety-meter">
+              <div class="meter-header"><span>防护值</span><strong id="safety-score">30</strong><em>/ 100</em></div>
+              <div class="meter-track"><span id="safety-bar"></span></div>
+            </div>
+            <button class="text-button" id="reset-scenario" type="button">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 7a7 7 0 1 0 .2 5M16 2v5h-5"/></svg>
+              重新推演
+            </button>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-studies section-shell" aria-labelledby="cases-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>04</span> 校园案例</p>
+          <h2 id="cases-title">风险常伪装成<br>一次“普通请求”。</h2>
+        </div>
+        <p>把抽象的领域知识还原成校园生活中的四个微场景。</p>
+      </div>
+      <div class="case-ledger">
+        <article class="case-row reveal" data-case="photo">
+          <span class="case-id">A-01</span>
+          <div class="case-copy">
+            <p>设备与场所</p>
+            <h3>“同学，能帮我拍一下实验室门口吗？”</h3>
+          </div>
+          <span class="case-risk">测绘风险</span>
+          <button class="circle-button case-open" type="button" aria-label="展开设备与场所案例">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </article>
+        <article class="case-row reveal" data-case="data">
+          <span class="case-id">A-02</span>
+          <div class="case-copy">
+            <p>数据与云端</p>
+            <h3>“把实验数据传到这个免费网盘吧。”</h3>
+          </div>
+          <span class="case-risk">数据失管</span>
+          <button class="circle-button case-open" type="button" aria-label="展开数据与云端案例">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </article>
+        <article class="case-row reveal" data-case="ai">
+          <span class="case-id">A-03</span>
+          <div class="case-copy">
+            <p>人工智能与信息</p>
+            <h3>“这段爆料录音听起来绝对是真的。”</h3>
+          </div>
+          <span class="case-risk">合成内容</span>
+          <button class="circle-button case-open" type="button" aria-label="展开合成内容案例">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </article>
+        <article class="case-row reveal" data-case="overseas">
+          <span class="case-id">A-04</span>
+          <div class="case-copy">
+            <p>海外利益与交往</p>
+            <h3>“出国前，先把行程和人员名单都发给我。”</h3>
+          </div>
+          <span class="case-risk">信息套取</span>
+          <button class="circle-button case-open" type="button" aria-label="展开海外交往案例">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="timeline-section section-shell" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>05</span> 法律与共识</p>
+          <h2 id="timeline-title">认知有来处，<br>行动有依据。</h2>
+        </div>
+        <p>从理念、法治到教育实践，这条脉络构成了理解安全边界的坐标。</p>
+      </div>
+      <div class="timeline-track">
+        <div class="timeline-line" aria-hidden="true"><span></span></div>
+        <article class="timeline-item reveal">
+          <time>2014.04</time>
+          <span class="timeline-dot"></span>
+          <div><p>理念提出</p><h3>总体国家安全观</h3><small>在中央国家安全委员会第一次会议上首次提出。</small></div>
+        </article>
+        <article class="timeline-item reveal">
+          <time>2015.07</time>
+          <span class="timeline-dot"></span>
+          <div><p>法定教育日</p><h3>《中华人民共和国国家安全法》</h3><small>第十四条规定每年 4 月 15 日为全民国家安全教育日。</small></div>
+        </article>
+        <article class="timeline-item reveal">
+          <time>2020.09</time>
+          <span class="timeline-dot"></span>
+          <div><p>教育衔接</p><h3>《大中小学国家安全教育指导纲要》</h3><small>推动国家安全教育在不同学段系统化、常态化开展。</small></div>
+        </article>
+        <article class="timeline-item reveal">
+          <time>2023.07</time>
+          <span class="timeline-dot"></span>
+          <div><p>依法反谍</p><h3>新修订《反间谍法》施行</h3><small>进一步明确反间谍工作的原则、范围与程序。</small></div>
+        </article>
+        <article class="timeline-item reveal">
+          <time>2024.05</time>
+          <span class="timeline-dot"></span>
+          <div><p>保密边界</p><h3>新修订《保守国家秘密法》施行</h3><small>强化国家秘密全生命周期管理，回应数字时代新问题。</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="self-check section-shell" aria-labelledby="check-title">
+      <div class="check-panel reveal">
+        <div class="check-intro">
+          <p class="section-kicker"><span>06</span> 自我观察</p>
+          <h2 id="check-title">你的数字安全习惯，<br>经得起几个问题？</h2>
+          <p>勾选最近三个月已经做到的习惯。答案只留在当前浏览器中。</p>
+          <div class="check-score">
+            <strong id="check-score">0</strong><span>/ 8</span>
+            <p id="check-label">等待检测</p>
+          </div>
+          <button class="button button-primary check-submit" id="check-submit" type="button">
+            <span>查看下一步建议</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+          </button>
+        </div>
+        <div class="check-list" id="check-list"></div>
+        <div class="check-result" id="check-result" aria-live="polite">
+          <div class="result-ring"><span>安全韧性</span><strong>—</strong></div>
+          <div class="result-copy">
+            <p class="panel-label">下一步</p>
+            <h3>完成自测，获得专属建议</h3>
+            <p>从八项日常习惯中，找到最值得开始的一项。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions section-shell" id="actions" aria-labelledby="actions-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker"><span>07</span> 日常行动</p>
+          <h2 id="actions-title">让“知道”成为<br>一种日常能力。</h2>
+        </div>
+        <p>安全素养不是记住一个答案，而是在真实压力下，仍能保持核验、克制与报告。</p>
+      </div>
+
+      <div class="action-grid">
+        <article class="action-card action-card-main reveal">
+          <div>
+            <p class="card-label">四步处置</p>
+            <h3>停 · 看 · 问 · 报</h3>
+          </div>
+          <div class="action-steps">
+            <div><span>01</span><strong>停</strong><p>先不回复、不转发、不上传，给判断留出时间。</p></div>
+            <div><span>02</span><strong>看</strong><p>核验来源、身份、文件密级与请求的合理范围。</p></div>
+            <div><span>03</span><strong>问</strong><p>向导师、实验室负责人或学校相关部门确认边界。</p></div>
+            <div><span>04</span><strong>报</strong><p>发现可疑线索时，通过正规渠道及时报告。</p></div>
+          </div>
+        </article>
+        <article class="action-card action-card-hotline reveal">
+          <p class="card-label">官方渠道</p>
+          <div class="hotline">
+            <span>12339</span>
+            <p>国家安全机关举报受理电话</p>
+          </div>
+          <p class="fine-print">如遇正在发生的违法犯罪或人身危险，应及时拨打 110。12339 用于向国家安全机关反映危害国家安全的可疑线索。</p>
+          <a href="https://www.12339.gov.cn/" target="_blank" rel="noopener">访问国家安全机关举报受理平台 <span>↗</span></a>
+        </article>
+        <article class="action-card action-card-list reveal">
+          <p class="card-label">日常习惯</p>
+          <h3>今天就能做的 5 件事</h3>
+          <ul>
+            <li><span>01</span>关闭不必要的定位与相册自动同步</li>
+            <li><span>02</span>给校园账号开启双重验证</li>
+            <li><span>03</span>涉密、内部材料不进入个人网盘</li>
+            <li><span>04</span>不在公开平台发布实验室敏感细节</li>
+            <li><span>05</span>遇到异常索取，先向老师或学校核实</li>
+          </ul>
+        </article>
+        <article class="action-card action-card-sources reveal">
+          <p class="card-label">权威资料</p>
+          <h3>回到权威原文</h3>
+          <a href="https://www.gov.cn/xinwen/2022-04/15/content_5685391.htm" target="_blank" rel="noopener"><span>总体国家安全观学习纲要 · 中国政府网</span><b>↗</b></a>
+          <a href="https://flk.npc.gov.cn/" target="_blank" rel="noopener"><span>国家法律法规数据库</span><b>↗</b></a>
+          <a href="http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202010/t20201027_496910.html" target="_blank" rel="noopener"><span>大中小学国家安全教育指导纲要 · 教育部</span><b>↗</b></a>
+          <a href="https://www.12339.gov.cn/" target="_blank" rel="noopener"><span>国家安全机关举报受理平台</span><b>↗</b></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="pledge section-shell" aria-labelledby="pledge-title">
+      <div class="pledge-visual reveal">
+        <div class="pledge-radar" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <div class="pledge-shield">
+            <svg viewBox="0 0 110 128"><path d="M55 5 102 22v36c0 29-19 52-47 63-28-11-47-34-47-63V22L55 5Z"/><path d="M31 68 48 50l12 12 24-30"/></svg>
+          </div>
+        </div>
+        <p>NO. <span id="pledge-code">BUAA · FIELD NOTE 01</span></p>
+      </div>
+      <div class="pledge-copy reveal">
+        <p class="section-kicker"><span>08</span> 一纸承诺</p>
+        <h2 id="pledge-title">把安全意识，留作一张可见的承诺。</h2>
+        <p>写下署名，生成一张可以保存的承诺卡。</p>
+        <label for="pledge-name">署名</label>
+        <div class="pledge-form">
+          <input id="pledge-name" maxlength="12" value="北航学子" autocomplete="name" aria-label="承诺卡署名">
+          <button class="button button-primary" id="generate-card" type="button">生成承诺卡 <span>↗</span></button>
+        </div>
+        <p class="form-note">图片在你的浏览器中生成。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p>防线<br><span>国家安全校园读本</span></p>
+        <h2>每一个普通人，<br>都是国家安全防线的一环。</h2>
+      </div>
+      <div class="footer-nav">
+        <p>CONTENT</p>
+        <a href="#concept">观念</a><a href="#domains">图鉴</a><a href="#simulation">推演</a><a href="#actions">行动</a>
+      </div>
+      <div class="footer-meta">
+        <p>项目</p>
+        <span>北京航空航天大学<br>国家安全教育</span>
+        <span>2026<br>校园安全读本</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Huiteng Zhuang</span>
+      <span>让判断回到事实，让行动守住边界。</span>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="domain-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <button class="modal-backdrop" data-close-modal type="button" aria-label="关闭弹窗"></button>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal type="button" aria-label="关闭弹窗">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+      </button>
+      <div class="modal-visual">
+        <span id="modal-index">01</span>
+        <div class="modal-symbol" id="modal-symbol"></div>
+        <p>领域 / <span id="modal-code">01</span></p>
+      </div>
+      <div class="modal-content">
+        <p class="panel-label" id="modal-category">DIGITAL SPACE</p>
+        <h2 id="modal-title"></h2>
+        <p class="modal-summary" id="modal-summary"></p>
+        <div class="modal-detail"><span>与我何关</span><p id="modal-connection"></p></div>
+        <div class="modal-detail"><span>稳妥行动</span><p id="modal-action"></p></div>
+        <div class="modal-tip"><span>可以这样做</span><p id="modal-tip"></p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal case-modal" id="case-modal" role="dialog" aria-modal="true" aria-labelledby="case-modal-title" hidden>
+    <button class="modal-backdrop" data-close-case type="button" aria-label="关闭案例弹窗"></button>
+    <div class="case-modal-panel">
+      <button class="modal-close" data-close-case type="button" aria-label="关闭案例弹窗">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+      </button>
+      <p class="panel-label" id="case-modal-kicker"></p>
+      <h2 id="case-modal-title"></h2>
+      <p class="case-modal-scene" id="case-modal-scene"></p>
+      <div class="case-answer-grid">
+        <div><span>先别急着回答</span><p id="case-modal-look"></p></div>
+        <div><span>更稳妥的做法</span><p id="case-modal-do"></p></div>
+      </div>
+      <p class="case-modal-principle" id="case-modal-principle"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

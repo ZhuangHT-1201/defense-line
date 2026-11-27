@@ -1,0 +1,10 @@
+node_modules/
+tmp/
+/deliverables/
+/report/
+/scripts/build-report.mjs
+/提交材料/
+/*_提交材料.zip
+.DS_Store
+Thumbs.db
+*.log
